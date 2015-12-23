@@ -1,0 +1,45 @@
+.buttons, .likes {
+    position: relative;
+    float: right;
+    margin-top: 30px;
+}
+.panel-title {
+    font-size: 20px;
+}
+.modal-header {
+    text-align: center;
+}
+.modal-body {
+    padding: 0;
+}
+.modal-body div {
+    margin-top: 15px;
+    text-align: center;
+}
+.modal-body div input {
+    width: 180px;
+    margin: 0 auto;
+}
+.modal-footer button{
+    margin-top: 20px;
+}
+.count span, .totalPrice span, #byr span, #totalClicks {
+    color: red;
+    font-size: 20px;
+}
+.totalPrice, #byr {
+     text-align: right;
+}
+#byr {
+    display: none;
+}
+.carousel {
+    width:200px;
+    height: auto;
+    margin: 0 auto;
+}
+.stopPlayBtns  {
+    width: 320px;
+    display: block;
+    margin: 20px auto;
+}
