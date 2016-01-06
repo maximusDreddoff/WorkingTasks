@@ -51,3 +51,15 @@ books = [
         price : "140"
     }
 ];
+
+var dataSet = [
+    [ "Javascript", "David Flanagan", "learning", "100"],
+    [ "PHP", "Luke Welling", "learning", "120"],
+    [ "Learning JavaScript Design Patterns", "Addy Osmani", "learning", "400"],
+    [ "Understanding ECMAScript 6", "Nicholas C. Zakas", "learning", "204"],
+    [ "Programming JavaScript Applications", "Eric Elliot", "learning", "214"],
+    [ "The C Programming Language", "Brian W. Kernighan", "learning", "514"],
+    [ "Programming Pearls", "Jon L. Bentley", "learning", "114"],
+    [ "Java Concurrency in Practice", "Brian Goetz", "learning", "321"],
+    [ "Harry Potter", "J. K. Rowling", "adventure", "134"]
+];

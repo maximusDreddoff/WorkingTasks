@@ -3,8 +3,7 @@
  */
 
 (function ($) {
-    var TEST = window;
-    TEST.WishList = {
+    window.WishList = {
         bookNames: [],
         bookAuthor: [],
         bookGenre: [],
@@ -67,7 +66,7 @@
                 localGenre = JSON.parse(localStorage['genre']),
                 localPrice = JSON.parse(localStorage['price']),
                 totalClicks = $('#totalClicks'),
-                tableData = $('table');
+                tableData = $('.wishlist-table tbody');
 
 
             //инструкции цикла for по массиву
@@ -109,6 +108,7 @@
                 byrId.text(byr + " p.");
             })
         },
+
 
         editLocalStorage: function () {
             var localNames = JSON.parse(localStorage['name']),
@@ -219,9 +219,9 @@
                 })())
             }
 
-            addNewBook.call(TEST.WishList);
-            deleteLastBook.apply(TEST.WishList);
-            deleteFirstBook.call(TEST.WishList);
+            addNewBook.call(window.WishList);
+            deleteLastBook.apply(window.WishList);
+            deleteFirstBook.call(window.WishList);
             likedPost();
         },
 
@@ -273,8 +273,10 @@
 
     };
 
-    localStorage.length > 0 ? TEST.WishList.filledLocalStorage() : TEST.WishList.emptyLocalStorage();
-    TEST.WishList.carouselFunctions();
+    localStorage.length > 0 ? window.WishList.filledLocalStorage() : window.WishList.emptyLocalStorage();
+    window.WishList.carouselFunctions();
 
+        //$('#example').DataTable();
+    $('.wishlist-table').DataTable();
 
 }(jQuery));
